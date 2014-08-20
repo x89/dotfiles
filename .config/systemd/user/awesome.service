@@ -1,0 +1,14 @@
+[Unit]
+Description=Awesome window manager
+Wants=xlogin@napalm.service
+AllowIsolate=true
+
+[Service]
+ExecStart=/usr/bin/awesome
+Environment=DE=awesome
+Restart=always
+RestartSec=5
+ 
+[Install]
+Alias=window-manager.target
+WantedBy=xorg@napalm.service

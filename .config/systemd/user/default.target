@@ -1,0 +1,6 @@
+[Unit]
+Description=Napalm's default.target
+Wants=dbus.socket xinitrc.socket awesome.service
+
+[Install]
+Alias=default.target

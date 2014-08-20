@@ -1,0 +1,12 @@
+[Unit]
+Description=Items that used to be in .xinitrc
+After=default.target
+Requires=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xmodmap /mnt/old/home/napalm/.xmodmaprc
+ExecStart=/usr/bin/xset r rate 180
+ExecStart=/usr/bin/xrdb -merge /mnt/old/home/napalm/.Xresources
+ExecStart=/usr/bin/wmname LG3D
+ExecStart=/usr/bin/setxkbmap dvorak
