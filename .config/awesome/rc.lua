@@ -311,6 +311,8 @@ globalkeys = awful.util.table.join(
 			awful.util.getdir("cache") .. "/history_eval")
 		end),
     awful.key({ modkey }, "a", function() awful.screen.focus_relative( 1) end),
+	-- How do we make modkey + Caps_Lock bind to something?
+    --awful.key({ modkey, "Shift" }, "Caps_Lock", function() awful.screen.focus_relative( 1) end),
 	awful.key({}, "Print", function () awful.util.spawn("scrot -e") end),
 	awful.key({modkey,}, "w", function() run_weechat() end)
 )
@@ -391,7 +393,7 @@ awful.rules.rules = {
     { rule = { class = "Plugin-container" },
       properties = { floating = true,
   					 focus = yes } },
-    { rule_any = { class = { "Redshiftguy.elf", "Mumble", "Gimp", "Vlc", "MPlayer", "mpv", "Bitcoin-qt", "Evince"} },
+    { rule_any = { class = { "Redshiftguy.elf", "Mumble", "Gimp", "Vlc", "MPlayer", "mpv", "Bitcoin-qt", "Evince", "Wine", "libreoffice-writer"} },
       properties = { floating = true } },
 }
 -- }}}
