@@ -45,3 +45,6 @@ au FileChangedShell * echo "Warning: File changed on disk"
 " Aspell BS
 map ^T :w!<CR>:!aspell check %<CR>:e! %<CR>
 
+
+" 2nd Nov 14
+execute pathogen#infect()
