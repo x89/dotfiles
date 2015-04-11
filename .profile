@@ -4,7 +4,6 @@ export PROMPT_COMMAND="echo -ne '\a'"
 export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR="vim"
 export BROWSER="firefox"
-export GREP_OPTIONS='--color=auto'
 export PATH=$PATH:$HOME/bin
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
 
