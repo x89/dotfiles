@@ -393,7 +393,7 @@ awful.rules.rules = {
     { rule = { class = "Plugin-container" },
       properties = { floating = true,
   					 focus = yes } },
-    { rule_any = { class = { "Redshiftguy.elf", "Mumble", "Gimp", "Vlc", "MPlayer", "mpv", "Bitcoin-qt", "Evince", "Wine", "libreoffice-writer"} },
+    { rule_any = { class = { "Redshiftguy.elf", "Mumble", "Gimp", "Vlc", "MPlayer", "mpv", "Bitcoin-qt", "Evince", "Wine", "libreoffice-writer", "Skype"} },
       properties = { floating = true } },
 }
 -- }}}
