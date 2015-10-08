@@ -101,7 +101,7 @@
 %
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
-\pagestyle{empty}      % Uncomment this to get rid of page numbers
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset{\marginparsep+\marginparwidth}
 \newlength{\footpageshift}
@@ -255,32 +255,35 @@ EH11 1HB				& \textit{DoB:} 8th of January 1990 \\
 
 \end{tabular}
 
+\section{Interests}
+I have a very strong interest in programming, security and networking. My primary  language is Python which I've become an expert in over the past 5+ years with daily usage of the language (including more advanced areas such as \texttt{asyncio}). I'm a Linux user at heart, I live life on the command line and love open source software. I have demonstrable skill not just with Linux on the desktop but within server/cloud environments -- including networking, AWS, firewalls and virtual machines.
+
 \section{Education}
 Computer Science BSc, \href{http://www.macs.hw.ac.uk/}{\textbf{Heriot-Watt University}} \\
-\emph{September 2007 to May 2011} (4 year degree) \\
+\emph{September 2007 to May 2011} \\
 \begin{tabular}{ c | c | c }
 	2\textsuperscript{nd} year & 3\textsuperscript{rd} year & 4\textsuperscript{th} year \\
 	\hline
 	 Database Management & Artificial Intelligence & Distributed Systems \\
 	 Discreet Mathematics & Operating Systems & Parallel Technologies \\
 	 Formal Specifications & Concurrency & Biological computation \\
-	 & & 4th year project 
+	 & & \\
 \end{tabular}
+My 4th year project was a C++ program that hooked a D3D9 Direct X process and recorded its output to a video file. Project fully managed by myself including planning, design, implementation, testing, user feedback and documentation.
 
 \halfblankline
 
 \section{Career}
 % Back to Edinburgh!
-% Time spent in Salamanca
 \textbf{Freelancer}, Edinburgh
 \vspace{-2mm}
 \begin{outerlist}
-	\item[] \textbf{Freelance work \& personal projects} \\
+	\item[] \textbf{Contract, freelance \& side projects} \\
 	\textit{September 2014 onwards}
 	\begin{innerlist}
-		\item Freelance work for various clients. Generally related to Linux. OpenVPN, PPTP and L2TP/IPSec. Migrating services. DNS issues and troubleshooting.
-		\item Using Unix tools every day in order to better my chances in my job searching.
-		\item Keeping my mind busy with ``challenge websites'' such as \href{http://projecteuler.net}{Project Euler} and \href{http://smashthestack.org}{Smash the Stack}
+		\item I work for many clients, often troubleshooting their server or EC2 instance. Very varied work, from configuring nginx to sorting out iptables to deploying OpenVPN securely
+		\item Use of nmap/wireshark/metasploit for network diagnosis and pentesting
+		\item Experimenting with complex local networking amongst VMs running various distributions, using configuration management (Puppet) and more
 	\end{innerlist}
 \end{outerlist}
 
@@ -293,10 +296,9 @@ Computer Science BSc, \href{http://www.macs.hw.ac.uk/}{\textbf{Heriot-Watt Unive
 	\item[] \textbf{Learning Spanish \& code projects} \\
 	\textit{July 2013 to September 2014} (1 year 2 months)
 	\begin{innerlist}
-		\item Learned Spanish to level Intermediate 1 (B1)
-		\item Worked on code with a group of 3 others, PostgreSQL and Django were the primary technologies involved
-		\item Did some code every day, some of which is viewable on my \href{https://github.com/x89}{Github}
-		\item I was running Arch Linux locally and ran a dedicated server which was leased out to various clients. I set up the VMs with KVM/Qemu, managed the networking and many of the clients' services
+		\item Learned Spanish from nothing to B1 proficiency
+		\item Kept up to date with my coding, some of which can be found on \href{https://github.com/x89}{Github} or \href{https://bitbucket.org/napaim/}{Bitbucket}
+		\item I ran a dedicated server which was leased out to various clients. I set up the VMs with Qemu, managed the networking and many of the clients' services
 	\end{innerlist}
 \end{outerlist}
 
@@ -309,10 +311,13 @@ Computer Science BSc, \href{http://www.macs.hw.ac.uk/}{\textbf{Heriot-Watt Unive
 \item[] \textbf{Software Engineer} \\
         \textit{June 2011 to July 2013} (2 years 1 month)
 	\begin{innerlist}
-		\item Perl, C++ and Python with Twisted Python
-		\item Extensive use of Javascript with jQuery
-		\item System administration of various Linux/Mac machines
-		\item Latest web technologies (HTML5, CSS, nginx, caching, load balancing)
+		\item A lot of Python (with Twisted/Django). Also Perl, Bash and C
+		\item Extensive use of Javascript with jQuery/ajax and its intercommunication with the Python server
+		\item Administration of all the Linux/Mac machines
+		\item Documentation, planning, feedback gathering and iterative design methodologies
+		\item HTML5 and CSS3
+		\item Caching and load balancing
+		\item PostgreSQL query optimization and schema design
 	\end{innerlist}
 \end{outerlist}
 \end{document}
