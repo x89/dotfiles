@@ -24,7 +24,6 @@
 \usepackage{calc}
 \usepackage[utf8]{inputenc}
 
-
 % Simpler bibsection for CV sections
 % (thanks to natbib for inspiration)
 \makeatletter
@@ -258,6 +257,13 @@ EH11 1HB				& \textit{DoB:} 8th of January 1990 \\
 
 \halfblankline
 
+\section{About me}
+What I'm looking for more than anything is to get into a Senior DevOps role, that has been my number one priority for the past two years and what I see myself doing for the foreseeable future. I have already made great strides towards that end in my own time and by selecting work for clients involved in high level Linux sysadmin and DevOps related technologies. \\
+I know that my current Linux sysadmin abilities are extremely good as I have been running dedicated and cloud servers and VPSs since 2006, I have run them since before I started at university and continue to administer them to this day. \\
+Though freelancing I've taught myself a great many skills in the world of sysadmin/DevOps but what I'm really looking for now is to hone those skills to perfection in a permanent work environment.
+
+\halfblankline
+
 \section{Work history}
 % Back to Edinburgh!
 \vspace{-8mm}
@@ -267,7 +273,21 @@ EH11 1HB				& \textit{DoB:} 8th of January 1990 \\
 	\begin{innerlist}
 		\item Repeat contracts for numerous clients generally in the area of Linux DevOps/sysadmin/software engineering
 		\item Technologies include: Docker, Qemu/KVM, OpenVPN, Puppet, Python, Perl, Bash, AWS (Cloud Formation, EC2, S3, \ldots), CloudFlare, Git, MySQL, PostgreSQL, Nginx/Apache/uwsgi, etc
-		\item Duties include: migration, configuration and set-up, security, service optimisation, monitoring, benchmarking, auto-scaling, networking, etc
+		\item Duties include: migration, configuration and set-up, security, service optimisation, monitoring, benchmarking, auto-scaling, networking, \ldots
+	\end{innerlist}
+	\item[] Client: Leo Hämäläinen
+	\begin{innerlist}
+		\item Leo has been my client for the past $\approx$ 7 months
+		\item I have been contracted as a Linux sysadmin for their operations at \href{http://devoca.fi}{devoca.fi}, a backend for their hand-held label device and other products with hundreds of clients throughout Finland and elsewhere who rely on Devoca's servers to operate
+		\item Duties have included: Upscaling operations; troubleshooting downtime; eradicating a rootkit that they'd contracted under a previous contractor; optimising both Apache and MySQL's configurations; planning for minimal downtime during migration periods; master-slave MySQL mirroring; backup script writing
+		\item Technologies include: Apache Servermix, Apache HTTP, Exim mail server (MTA), Ubuntu 14.04, iptables firewall, fail2ban, MySQL, DKIM + SPF, DNS
+		\item Communication has been key to my success in this role
+	\end{innerlist}
+	\item[] Client: CloudWorks
+	\begin{innerlist}
+		\item I was contracted to set up a continuous deployment strategy utilising AWS's Cloud Formation, EC2 and RDS alongside a Puppet master server to manage the deployed servers. This required writing from scratch a Cloud Formation script with a variable number of EC2 instances which would image themselves from an AMI which would connect to a Puppet master server and auto-configure themselves with an app hosted on Github.
+		\item This has been the most challenging but also most enjoyable role I have done so far. Working within Linux, AWS and DevOps is where I feel completely at home and find myself loving the work that I do, impressing myself with my own abilities.
+		\item Technologies: AWS, EC2, RDS, Route53, Puppet, PostgreSQL, troposphere, cloud-config, Cloud Formation
 	\end{innerlist}
 \end{outerlist}
 
@@ -284,6 +304,11 @@ EH11 1HB				& \textit{DoB:} 8th of January 1990 \\
 		\item Postgres + MySQL
 		\item Bitcoin trading, investment and development
 		\item Linux system administration
+	\end{innerlist}
+	\item[] Client: Éric Bisceglia
+	\begin{innerlist}
+		\item Worked with Éric and another software engineer for $\approx$ 6 months
+		\item Containerising app instances to provide security in case of a security breach, ensuring uptime and redundancy for the web frontend/PostgreSQL backend on Microsoft's Azure platform
 	\end{innerlist}
 \end{outerlist}
 
@@ -322,7 +347,7 @@ EH11 1HB				& \textit{DoB:} 8th of January 1990 \\
 Computer Science BSc, \href{http://www.macs.hw.ac.uk/}{\textbf{Heriot-Watt University}} \\
 \emph{September 2007 to May 2011} \\
 
-\begin{tabular}{c | c | c}
+\begin{tabular}{ c | c | c }
 	2\textsuperscript{nd} year & 3\textsuperscript{rd} year & 4\textsuperscript{th} year \\
 	\hline
 	Database Management & Artificial Intelligence & Distributed Systems \\
@@ -339,19 +364,19 @@ Computer Science BSc, \href{http://www.macs.hw.ac.uk/}{\textbf{Heriot-Watt Unive
 	\item Achieved Intermediate 1 Spanish (\href{http://eoisalamanca.centros.educa.jcyl.es/sitio/}{Escuela de Idiomas})
 	\item Raised \pounds{1,050} for MND Scotland in a charity Skydive
 	\item Maintain Github and Bitbucket profiles
-	\item Always up to date with the latest technologies in my field
+	\item Always up to date with the latest technologies in DevOps and Software Engineering
 \end{innerlist} 
 
 
 \section{References}
-\begin{tabular}{r | c | c }
+\begin{tabular}{ r | c | c }
 	Name & \textbf{Dr.~Greg Michaelson} & {\textbf{Mr.~Steve Tuttle}} \\
 	%\hline
 	Relation & Project supervisor & Client (DevOps, AWS)  \\
-	Email &~\href{mailto:G.Michaelson@hw.ac.uk}{G.Michaelson@hw.ac.uk} &~\href{mailto:swt@drinkme.com}{swt@drinkme.com} \\
-	Phone &~+44 131 451 3422 &~+61 400 601 689 \\
+	Email & ~\href{mailto:G.Michaelson@hw.ac.uk}{G.Michaelson@hw.ac.uk} & ~\href{mailto:swt@drinkme.com}{swt@drinkme.com} \\
+	Phone & ~+44 131 451 3422 & ~+61 400 601 689 \\
 \end{tabular}
 
-\footnotetext{CV generated on \today, with \LaTeX}
+%\footnotetext{CV generated on \today, with \LaTeX}
 
 \end{document}
