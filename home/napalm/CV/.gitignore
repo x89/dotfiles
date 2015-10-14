@@ -1,4 +1,9 @@
 *olivia*
+*.html
+*.txt
 *.aux
 *.log
 *.gz
+*.css
+*.out
+*.4ct
