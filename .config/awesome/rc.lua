@@ -10,6 +10,7 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
+local xdg_menu = require("archmenu")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -97,6 +98,7 @@ myawesomemenu = {
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
+									{ "Applications", xdgmenu },
                                     { "open terminal", terminal }
                                   }
                         })
@@ -367,7 +369,7 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "gimp" },
       properties = { floating = true } },
-    { rule_any = { class = {"libreoffice-calc", "Plugin-container", "Redshiftguy.elf", "Mumble", "Gimp", "Vlc", "MPlayer", "mpv", "Bitcoin-qt", "Evince", "Wine", "libreoffice-writer", "Skype", "qemu-system-x86_64", "Pavucontrol", "Steam"} },
+    { rule_any = { class = {"libreoffice-calc", "Plugin-container", "Redshiftguy.elf", "Mumble", "Gimp", "Vlc", "MPlayer", "mpv", "Bitcoin-qt", "Evince", "Wine", "libreoffice-writer", "Skype", "qemu-system-x86_64", "Pavucontrol", "Steam", "Anki", "Deluge", "FileBot", "Upwork", "Pidgin"} },
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
