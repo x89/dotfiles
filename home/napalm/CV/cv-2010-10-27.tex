@@ -246,52 +246,37 @@ includemp]{geometry}
 		% Back to Edinburgh!
 		\vspace{-8mm}
 		\begin{outerlist}
-			\item[] \textbf{DevOps Engineer, \href{https://www.postcodelottery.co.uk/}{People's Postcode Lottery}} \\
-			\textit{January 2016 until May 2016} (6 months)
+			\item[] \textbf{Freelance Linux System Administrator} \\
+			\textit{September 2014 until today}
 			\begin{innerlist}
-				\item In depth work with Ansible
-				\item Working intimately with the developers, DBAs, managers and IT
-				\item Maintenance of the dev/staging/acceptance/production environments
-				\item Primary sysadmin of $\approx$ 200 servers
-				\item Continuous deployment
-				\item Setup and use of Ansistrano/Capistrano
-				\item Atlassian suite (JIRA, HipChat, Confluence, Bitbucket)
+				\item Repeat contracts for numerous clients generally in the area of Linux DevOps/sysadmin/software engineering
+				\item Technologies include: Docker, Qemu/KVM, OpenVPN, Puppet, Python, Perl, Bash, AWS (Cloud Formation, EC2, S3, \ldots), CloudFlare, Git, MySQL, PostgreSQL, Nginx/Apache/uwsgi, etc
+				\item Duties include: migration, configuration and set-up, security, service optimisation, monitoring, benchmarking, auto-scaling, networking, \ldots
 			\end{innerlist}
-			
-			%%%%%%%%%%%%%%%%
-			% Freelance Sysadmin work (Upwork, etc)
-			\item[] \textbf{Freelance Linux Sysadmin / DevOps Engineer} \\
-			\textit{September 2014 until January 2016} (1 year 4 months)
+			\item[] Client: CloudWorks
 			\begin{innerlist}
-				\item Repeat contracts for numerous clients generally in the area of Linux sysadmin and DevOps. Some software engineering and scripting
-				\item Technologies: Docker, Qemu/KVM, OpenVPN, Ansible, Jenkins, Puppet, Python, Perl, Bash, AWS (Cloud Formation, EC2, S3, ECS, Route53, ELB, ASG,  \ldots), CloudFlare, Git, MySQL, PostgreSQL, Nginx, Apache, uwsgi, and more
-				\item I have outlined below a portion of the work done for my clients over the years.
-				\item Communication was key to my success with every client, and with their development teams.
-			\end{innerlist}
-			\item[] Client: Daniel Medveczky, EQRaffle, RSBooster, \ldots
-			\begin{innerlist}
-				\item My client's project was overloaded and they hired me as a specialist who could move them to the cloud for scalability.
-				\item This was extremely enjoyable as I was given complete freedom to design from scratch their infrastructure. I migrated their single cPanel based dedicated server to a staging/production environment on AWS's EC2. I worked closely with my client and his developers to determine the correct set-up for them and scaled it accordingly, it involved EC2 instances, an ELB, CloudFront, RDS databases and monitoring.
-				\item Technologies: AWS, EC2, RDS, Git, Ansible, Sensu
-			\end{innerlist} 
-			\halfblankline % Page break
-			
-			\item[] Client: Steve Tuttle, CloudWorks
-			\begin{innerlist}
-				\item I was contracted to create a continuous deployment strategy utilising AWS's Cloud Formation, EC2 and RDS alongside a Puppet master server to manage the Puppet agents. This required using Cloud Formation with a variable number of EC2 instances which would bootstrap themselves from AMIs allowing the EC2 instances to communicate with the Puppet master and automatically deploy their web app with continuous updates based on pushes to Github.
-				\item This was a challenging but enjoyable role. Working with Linux, AWS and the DevOps stack is what I love.
+				\item I was contracted to set up a continuous deployment strategy utilising AWS's Cloud Formation, EC2 and RDS alongside a Puppet master server to manage the deployed servers. This required writing from scratch a Cloud Formation script with a variable number of EC2 instances which would image themselves from an AMI which would connect to a Puppet master server and auto-configure themselves with an app hosted on Github.
+				\item This has been the most challenging but also most enjoyable role I have done so far. Working within Linux, AWS and DevOps is where I feel completely at home and find myself loving the work that I do, impressing myself with my own abilities.
 				\item Technologies: AWS, EC2, RDS, Route53, Puppet, PostgreSQL, troposphere, cloud-config, Cloud Formation
 			\end{innerlist}
-			\item[] Client: Leo Hämäläinen, Devoca
+			\item[] Client: Leo Hämäläinen
 			\begin{innerlist}
-				\item I was contracted as a Linux sysadmin to maintain their back-end servers, used by thousands of people for their hand-held label devices.
-				\item Duties: Up-scaling operations; troubleshooting downtime; eradicating a rootkit that they'd contracted under a previous contractor; reconfiguring and optimising both Apache and MySQL; planning for minimal downtime during migrations; master-slave MySQL mirroring; scripting backups
-				\item Technologies: Apache Servermix, Apache HTTP, Exim mail server, Ubuntu 14.04, iptables firewall, fail2ban, MySQL, DKIM + SPF, DNS
+				\item Leo has been my client for the past $\approx$ 7 months
+				\item I have been contracted as a Linux sysadmin for their operations at \href{http://devoca.fi}{devoca.fi}, a backend for their hand-held label device and other products with hundreds of clients throughout Finland and elsewhere who rely on Devoca's servers to operate
+				\item Duties have included: Upscaling operations; troubleshooting downtime; eradicating a rootkit that they'd contracted under a previous contractor; optimising both Apache and MySQL's configurations; planning for minimal downtime during migration periods; master-slave MySQL mirroring; backup script writing
+				\item Technologies include: Apache Servermix, Apache HTTP, Exim mail server (MTA), Ubuntu 14.04, iptables firewall, fail2ban, MySQL, DKIM + SPF, DNS
+				\item Communication has been key to my success in this role
 			\end{innerlist}
 			\item[] Client: Ellison Brookes
 			\begin{innerlist}
-				\item For my London based client I deployed a Docker Registry using Amazon's container service, ECS and their storage service, S3. This allowed their developers to use their own Docker registry.
+				\item For my London based client I deployed a Docker Registry using Amazon's container service, ECS and their storage service, S3
 			\end{innerlist}
+			\item[] Client: EQRaffle
+			\begin{innerlist}
+				\item Migrating Apache instances to AWS's EC2 with Elastic Load Balancing (ELB), an Auto Scaling Group and a MySQL DB hosted on RDS
+				\item Setting up the development and production environment for my client to be able to quickly deploy their code to production via Github and Puppet
+			\end{innerlist}
+			
 		\end{outerlist}
 		
 		\halfblankline
@@ -305,13 +290,13 @@ includemp]{geometry}
 				\item Several large projects using Django + Python
 				\item Web development
 				\item Postgres + MySQL
-				\item Bitcoin trading and investigation
+				\item Bitcoin trading, investment and development
 				\item Linux system administration
 			\end{innerlist}
 			\item[] Client: Éric Bisceglia
 			\begin{innerlist}
 				\item Worked with Éric and another software engineer for $\approx$ 6 months
-				\item Containerising altcoin instances to provide security in case of malicious users or hackers, ensuring uptime and redundancy for the web frontend/PostgreSQL backend on Microsoft's Azure platform
+				\item Containerising app instances to provide security in case of a security breach, ensuring uptime and redundancy for the web frontend/PostgreSQL backend on Microsoft's Azure platform
 			\end{innerlist}
 		\end{outerlist}
 		
@@ -344,44 +329,42 @@ includemp]{geometry}
 			\textit{June 2004 to June 2006} (2 years)
 		\end{outerlist}
 		
+		\newpage
 		
 		\section{Education}
 		Computer Science BSc, \href{http://www.macs.hw.ac.uk/}{\textbf{Heriot-Watt University}} \\
 		\emph{September 2007 to May 2011} \\
 		
-%		\begin{tabular}{ c | c | c }
-%			2\textsuperscript{nd} year & 3\textsuperscript{rd} year & 4\textsuperscript{th} year \\
-%			\hline
-%			Database Management & Artificial Intelligence & Distributed Systems \\
-%			Discreet Mathematics & Operating Systems & Parallel Technologies \\
-%			Internet Communications & Computer Graphics & Data Mining \\
-%			Software Design & Professional Development & Machine Learning \\
-%			Formal Specifications & Concurrency & Biological computation \\
-%		\end{tabular} \\
+		\begin{tabular}{ c | c | c }
+			2\textsuperscript{nd} year & 3\textsuperscript{rd} year & 4\textsuperscript{th} year \\
+			\hline
+			Database Management & Artificial Intelligence & Distributed Systems \\
+			Discreet Mathematics & Operating Systems & Parallel Technologies \\
+			Internet Communications & Computer Graphics & Data Mining \\
+			Software Design & Professional Development & Machine Learning \\
+			Formal Specifications & Concurrency & Biological computation \\
+		\end{tabular} \\
 		
 		
 		\section{Other}
 		\vspace{-5mm}
 		\begin{innerlist}
-			\item Achieved Intermediate level Spanish at the  \href{http://eoisalamanca.centros.educa.jcyl.es/sitio/}{Escuela Oficial de Idiomas}
+			\item Achieved Intermediate 1 Spanish (\href{http://eoisalamanca.centros.educa.jcyl.es/sitio/}{Escuela de Idiomas})
 			\item Raised \pounds{1,050} for MND Scotland in a charity Skydive
-			\item Maintain extra-curricular Github and Bitbucket profiles
-			\item Always up to date with the latest DevOps tech
-			\item Attend the Edinburgh AWS, Docker and DevOps meetups
+			\item Maintain Github and Bitbucket profiles
+			\item Always up to date with the latest technologies in DevOps and Software Engineering
 		\end{innerlist} 
 		
-
-		\section{References}		
-		References available on request.
-%		\section{References}
-%		\begin{tabular}{ r | c | c }
-%			Name & \textbf{Dr.~Greg Michaelson} & {\textbf{Mr.~Steve Tuttle}} \\
-%			%\hline
-%			Relation & Project supervisor & Client (DevOps, AWS)  \\
-%			Email & ~\href{mailto:G.Michaelson@hw.ac.uk}{G.Michaelson@hw.ac.uk} & ~%\href{mailto:swt@drinkme.com}{swt@drinkme.com} \\
-%			Phone & ~+44 131 451 3422 & ~+61 400 601 689 \\
-%		\end{tabular}
-%		
+		
+		\section{References}
+		\begin{tabular}{ r | c | c }
+			Name & \textbf{Dr.~Greg Michaelson} & {\textbf{Mr.~Steve Tuttle}} \\
+			%\hline
+			Relation & Project supervisor & Client (DevOps, AWS)  \\
+			Email & ~\href{mailto:G.Michaelson@hw.ac.uk}{G.Michaelson@hw.ac.uk} & ~\href{mailto:swt@drinkme.com}{swt@drinkme.com} \\
+			Phone & ~+44 131 451 3422 & ~+61 400 601 689 \\
+		\end{tabular}
+		
 		%\footnotetext{CV generated on \today, with \LaTeX}
 		
 	\end{document}
