@@ -1,0 +1,1 @@
+/home/napalm/.config/awesome/archmenu.lua

@@ -1,0 +1,1 @@
+/home/napalm/.config/i3/config

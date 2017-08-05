@@ -1,0 +1,10 @@
+- defaults:
+    link:
+      relink: false
+
+- clean: ['~']
+
+- link:
+    # /home/napalm/.vimrc: vimrc
+    vimrc: ~/.vimrc
+
