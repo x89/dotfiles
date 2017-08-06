@@ -7,45 +7,43 @@
 
 - link:
     # i3
-    i3: ~/.config/i3/config
+    ~/.config/i3/config: i3
 
     # Vim
-    vim: ~/.vim
-    vimrc: ~/.vimrc
-    ~/.vimrc: vim
+    ~/.vimrc: vimrc
 
     # Awessome
-    rc.lua: ~/.config/awesome/rc.lua
-    archmenu.lua: ~/.config/awesome/archmenu.lua
+    ~/.config/awesome/rc.lua: rc.lua
+    ~/.config/awesome/archmenu.lua: archmenu.lua
 
 
     # Mutt
-    muttrc: ~/.muttrc
-    mutt: ~/.mutt
+    ~/.muttrc: muttrc
+    ~/.mutt: mutt
 
     #  ZSH
-    zshrc: ~/.zshrc
-    zpreztorc: ~/.zpreztorc
+    ~/.zshrc: zshrc
+    ~/.zpreztorc: zpreztorc
 
     # Xorg
-    xinitrc: ~/.xinitrc
-    Xmodmap: ~/.Xmodmap
-    xmodmaaprc: ~/.xmodmaprc
-    Xresources: ~/.Xresources
-    xsession: ~/.xsession
+    ~/.xinitrc: xinitrc
+    ~/.Xmodmap: Xmodmap
+    ~/.xmodmaprc: xmodmaaprc
+    ~/.Xresources: Xresources
+    ~/.xsession: xsession
 
-    # User systemd unit files
-    redshift.service: ~/.config/systemd/user/redshift.service
-    bitstamp.service: ~/.config/systemd/user/bitstamp-widget.service
+  # User systemd unit files
+  ~/.config/systemd/user/redshift.service: redshift.service
+  ~/.config/systemd/user/bitstamp-widget.service: bitstamp.service
 
-    # Others
-    rtorretrc: ~/.rtorrent.rc
+  # Others
+  ~/.rtorrent.rc: rtorrentrc
 
-    # System files
-    makepkg.conf:
-      path: /etc/makepkg.conf
-      relink: false
-    pacman.conf:
-      path: /etc/pacman.conf
-      relink: false
+  # System files
+  makepkg.conf:
+    /etc/makepkg.conf: path
+    relink: false
+  pacman.conf:
+    /etc/pacman.conf: path
+    relink: false
 
