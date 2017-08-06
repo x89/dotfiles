@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts Redshift after loading Awesome WM
+Wants=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/redshift-gtk
+
+[Install]
+WantedBy=graphical.target
