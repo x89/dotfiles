@@ -12,6 +12,7 @@
     # Vim
     vim: ~/.vim
     vimrc: ~/.vimrc
+    ~/.vimrc: vim
 
     # Awessome
     rc.lua: ~/.config/awesome/rc.lua

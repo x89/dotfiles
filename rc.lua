@@ -1,1 +1,0 @@
-/home/napalm/.config/awesome/rc.lua
