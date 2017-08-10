@@ -1,0 +1,7 @@
+# git config --global core.excludesfile "~/.config/gitignore"
+
+*.swp
+.terraform
+.venv
+.keys
+Gemfile.lock
