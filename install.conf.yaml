@@ -16,6 +16,8 @@
     ~/.config/awesome/rc.lua: rc.lua
     ~/.config/awesome/archmenu.lua: archmenu.lua
 
+    # Git
+    ~/.config/gitignore: gitignore
 
     # Mutt
     ~/.muttrc: muttrc
