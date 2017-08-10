@@ -9,6 +9,9 @@
     # i3
     ~/.config/i3/config: i3
 
+    # Streamlink
+    ~/.config/streamlink/config: streamlink
+
     # Vim
     ~/.vimrc: vimrc
 
