@@ -167,9 +167,10 @@ hide_edge_borders both
 # Nay shit
 exec chromium
 exec slack
-exec pidginSlack
-exec "urxvt -e weechat"
+exec pidgin
+exec redshift
+#exec "urxvt -e weechat"
 
 assign [class="Chromium"] → 1
-assign [class="Slack"] → 4
-assign [class="Pidgin"] → 5
+assign [class="Slack"] → 2
+assign [class="Pidgin"] → 3
