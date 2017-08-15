@@ -1,6 +1,7 @@
 # git config --global core.excludesfile "~/.config/gitignore"
 
 *.swp
+*.secret*
 .terraform
 .venv
 .keys
