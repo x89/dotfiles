@@ -45,7 +45,7 @@
      {"Avahi SSH Server Browser", "/usr/bin/bssh"},
      {"Avahi VNC Server Browser", "/usr/bin/bvnc"},
      {"Chromium", "chromium ", "/usr/share/icons/hicolor/16x16/apps/chromium.png" },
-     {"Discord", "/usr/bin/discord", "///usr/share/pixmaps/discord.png" },
+     {"Discord Canary", "/usr/bin/discord-canary", "///usr/share/pixmaps/discord-canary.png" },
      {"ELinks", "xterm -e /usr/bin/elinks "},
      {"Electrum Bitcoin Wallet", "electrum ", "/usr/share/pixmaps/electrum.png" },
      {"Empathy", "empathy", "/usr/share/icons/hicolor/16x16/apps/empathy.png" },
