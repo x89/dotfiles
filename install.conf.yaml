@@ -16,6 +16,9 @@
     # Vim
     ~/.vimrc: vimrc
 
+    # Atom
+    ~/.atom/keymap.cson: keymap.cson
+
     # Awessome
     ~/.config/awesome/rc.lua: rc.lua
     ~/.config/awesome/archmenu.lua: archmenu.lua
