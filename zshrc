@@ -15,5 +15,5 @@ fi
 prompt cloud
 
 alias pacman=pacaur
-alias egrep="egrep -Rn"
+alias egrep="egrep --color -Rn"
 alias bc='bc -ql'
