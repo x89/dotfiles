@@ -46,6 +46,7 @@
 
   # Others
   ~/.rtorrent.rc: rtorrentrc
+  ~/bin/rtorrent-postprocess.sh: rtorrent.sh
 
   # System files
   makepkg.conf:
