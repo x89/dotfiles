@@ -5,7 +5,8 @@ set -e
 TORRENT_PATH="$1"
 TORRENT_NAME="$2"
 TORRENT_LABEL="$3"
-JRE_PATH="/usr/lib/jvm/java-8-openjdk/jre/bin"  # Doesn't work with Java 7 Trol
+JRE_PATH="/usr/lib/jvm/java-8-openjdk/jre/bin"  # Only works with OpenJRE 8
+export PATH=${JRE_PATH}:${PATH}
 
 echo "Torrent Label: ${TORRENT_LABEL}"
 echo "Torrent Name: ${TORRENT_NAME}"
@@ -16,7 +17,6 @@ if [ ! -d "${TORRENT_PATH}" ]; then
 	exit
 fi
 
-PATH=${JRE_PATH}:${PATH}
 
 # Grab English and Spanish subtitles
 filebot -get-missing-subtitles "${TORRENT_PATH}" --lang en --output srt --encoding utf8 -non-strict
