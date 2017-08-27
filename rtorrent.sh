@@ -18,8 +18,22 @@ if [ ! -d "${TORRENT_PATH}" ]; then
 fi
 
 # Grab English and Spanish subtitles
-filebot -script "dev:suball" -non-strict --lang en --encoding utf8 --output srt "${TORRENT_PATH}"
-filebot -script "dev:suball" -non-strict --lang es --encoding utf8 --output srt "${TORRENT_PATH}"
+#filebot -script "dev:suball" -non-strict --lang en --encoding utf8 --output srt "${TORRENT_PATH}"
+#filebot -script "dev:suball" -non-strict --lang es --encoding utf8 --output srt "${TORRENT_PATH}"
 
-filebot -script fn:amc --output "/nas/Multimedia/" --action move -non-strict --def excludeList=/data/amc.txt seriesFormat="/nas/Multimedia/TV/{n}/Season.{s}/{n} - {sxe} - {vf} - {t}" --def movieFormat="/nas/Multimedia/Movies/{ny}/{fn}" --conflict auto --def plex=edinburgh.vaunt.eu:G2xsXDRbpxwsvNLz2Gxe --def clean=y ${TORRENT_PATH}
+EXCLUDE=~/.config/amc.txt
+if [[ -d -data ]]; then
+	EXCLUDE=/data/amc.txt
+fi
+
+filebot -script fn:amc --output "/nas/Multimedia/" \
+	--action move \
+	-non-strict \
+	--def excludeList=$EXCLUDE \
+	--def seriesFormat="/nas/Multimedia/TV/{n.replaceAll(' ', '.')}/Season.{s}/{n} - {s+'x'}{e.pad(2)} - {vf} - {t}" \
+	--def movieFormat="/nas/Multimedia/Movies/{ny}/{fn}" \
+	--conflict auto \
+	--def plex=edinburgh.vaunt.eu:G2xsXDRbpxwsvNLz2Gxe \
+	--def clean=y \
+	${TORRENT_PATH}
 
