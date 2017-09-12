@@ -34,4 +34,3 @@ filebot -script fn:amc --output "/nas/Multimedia/" \
         --def movieFormat="/nas/Multimedia/Movies/{ny}/{fn}" \
 		--conflict auto \
         --def clean=y "${TORRENT_PATH}"
-
