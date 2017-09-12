@@ -27,13 +27,11 @@ if [[ -d -data ]]; then
 fi
 
 filebot -script fn:amc --output "/nas/Multimedia/" \
-	--action move \
-	-non-strict \
-	--def excludeList=$EXCLUDE \
-	--def seriesFormat="/nas/Multimedia/TV/{n.replaceAll(' ', '.')}/Season.{s}/{n} - {s+'x'}{e.pad(2)} - {vf} - {t}" \
-	--def movieFormat="/nas/Multimedia/Movies/{ny}/{fn}" \
-	--conflict auto \
-	--def plex=edinburgh.vaunt.eu:G2xsXDRbpxwsvNLz2Gxe \
-	--def clean=y \
-	${TORRENT_PATH}
+        --action move \
+        -non-strict \
+        --def excludeList=${EXCLUDE} \
+        --def seriesFormat="/nas/Multimedia/TV/{n.replaceAll(' ', '.')}/Season.{s}/{n} - {s+'x'}{e.pad(2)} - {vf} - {t}" \
+        --def movieFormat="/nas/Multimedia/Movies/{ny}/{fn}" \
+		--conflict auto \
+        --def clean=y "${TORRENT_PATH}"
 

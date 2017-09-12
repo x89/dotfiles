@@ -4,7 +4,7 @@ URxvt*.urgentOnBell: true
 URxvt*.visualBell: off
 URxvt*.background: black
 URxvt*.foreground:                   white
-URxvt.perl-ext-common: default,matcher,clipboard,url-select
+URxvt.perl-ext-common: default,matcher,clipboard,url-select,autocomplete-ALL-the-things
 URxvt.keysym.M-slash:  perl:aAtt:complete
 URxvt.url-launcher: xdg-open
 URxvt.matcher.button: 1

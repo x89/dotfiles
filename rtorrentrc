@@ -33,7 +33,7 @@ ratio.upload.set = 2500M
 # Default session directory. Make sure you don't run multiple instance
 # of rtorrent using the same session directory. Perhaps using a
 # relative path?
-# session = ./.session
+session = ./.session
 
 # Aye
 system.method.set_key = event.download.finished,filebot,"execute={/home/napalm/bin/rtorrent-postprocess.sh,$d.get_base_path=,$d.get_name=,$d.get_custom1=}"
