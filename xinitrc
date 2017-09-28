@@ -30,6 +30,4 @@ else
 	exec awesome
 fi
 
-
-
 # vim: syntax=sh

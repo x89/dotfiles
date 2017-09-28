@@ -1,5 +1,6 @@
 # git config --global core.excludesfile "~/.config/gitignore"
 
+terraform.tfvars
 *.lock*
 *.backup
 .terraform
