@@ -11,6 +11,7 @@ xset r rate 180
 # Mouse accel shite
 xset m 1/1 0
 xrdb ~/.Xresources
+xmodmap ~/.Xmodmap
 
 setxkbmap dvorak
 # Compose key

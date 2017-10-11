@@ -27,7 +27,7 @@ URxvt*boldFont:             xft:Anonymous Pro:bold:size=14
 URxvt*italicFont:           xft:Anonymous Pro:italic:size=14
 URxvt*boldItalicFont:       xft:Anonymous Pro:bold:italic:size=14
 
-Xft.dpi: 96
+Xft.dpi: 84 
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
