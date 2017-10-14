@@ -12,6 +12,7 @@
     ~/bin/rtorrent-postprocess.sh:
       path: rtorrent.sh
       force: true
+    ~/.config/locale.conf: locale.conf
 
     # i3
     ~/.config/i3/config: i3
