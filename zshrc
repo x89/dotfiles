@@ -15,7 +15,7 @@ alias pacman='pacaur'
 alias egrep='egrep --color -Rn'
 alias bc='bc -ql'
 alias watch='watch --color --interval 1'
-alias rm='noglob rm -i --one-filesystem'
+alias rm='noglob rm -i'
 
 if [[ -f /usr/share/vim/vim80/macros/less.sh ]]; then
 	alias less='/usr/share/vim/vim80/macros/less.sh'

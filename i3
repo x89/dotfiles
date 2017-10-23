@@ -71,7 +71,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+d split h
 
 # split in vertical orientation
-bindsym $mod+k split v
+bindsym $mod+i split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+u fullscreen toggle
@@ -169,8 +169,9 @@ exec chromium
 exec slack
 exec pidgin
 exec redshift
-#exec "urxvt -e weechat"
+exec "urxvt -e weechat"
+exec --no-startup-id dunst
 
-assign [class="Chromium"] → 1
-assign [class="Slack"] → 2
-assign [class="Pidgin"] → 3
+#assign [class="Chromium"] → 1
+#assign [class="Slack"] → 2
+#assign [class="Pidgin"] → 3
