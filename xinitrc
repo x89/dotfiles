@@ -23,12 +23,11 @@ xset s 0 0
 xset -dpms
 #export STEAM_RUNTIME=0
 
-if [[ ${HOST} != "edinburgh.vaunt.eu" ]]; then
+if [[ ${HOST} != "gurgeh.vaunt.eu" ]]; then
 	# Prevents the touchpad being utilised while typing
 	syndaemon -i 0.75 -t -K -R -d
-	exec i3
-else
-	exec awesome
 fi
+
+exec awesome
 
 # vim: syntax=sh
